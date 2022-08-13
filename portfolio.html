@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -23,7 +23,7 @@
     <header class="header">
       <div class="container header-menu">
         <nav class="nav header-menu">
-          <a href="./index.html" class="logo link"><span class="accent">Web</span>Studio</a>
+          <a href="./index.html" class="logo link"><span class="logo__accent">Web</span>Studio</a>
 
           <ul class="site-nav-list list">
             <li class="site-nav-item">
@@ -66,208 +66,227 @@
     <main>
       <section class="section projects">
         <div class="container">
-          <h1 class="projects-title visually-hidden">Портфоліо</h1>
+          <h1 class="visually-hidden">Портфоліо</h1>
           <!-- заголовок приховано-->
 
           <!--Фільтр-->
           <ul class="filter list">
-            <li class="filter-item">
-              <button type="button" class="filter-button active">Все</button>
+            <li class="filter__item">
+              <button type="button" class="button filter__button button--active">Все</button>
             </li>
-            <li class="filter-item">
-              <button type="button" class="filter-button">Веб-сайти</button>
+            <li class="filter__item">
+              <button type="button" class="button filter__button">Веб-сайти</button>
             </li>
-            <li class="filter-item">
-              <button type="button" class="filter-button">Додатки</button>
+            <li class="filter__item">
+              <button type="button" class="button filter__button">Додатки</button>
             </li>
-            <li class="filter-item">
-              <button type="button" class="filter-button">Дизайн</button>
+            <li class="filter__item">
+              <button type="button" class="button filter__button">Дизайн</button>
             </li>
-            <li class="filter-item">
-              <button type="button" class="filter-button">Маркетинг</button>
+            <li class="filter__item">
+              <button type="button" class="button filter__button">Маркетинг</button>
             </li>
           </ul>
 
           <!--Список проджектів-->
-          <ul class="projects-list list">
-            <li class="projects-item">
-              <a class="projects-link link" href="">
-                <div class="projects-thumb">
+          <ul class="projects list">
+            <li class="projects__item">
+              <a class="projects__link link" href="">
+                <div class="card">
                   <img
+                    class="card__image"
                     src="./images/projects/project1.jpg"
                     alt="Веб-сайт на екрані"
                     width="370"
                     height="294"
                   />
-                  <p class="projects-desc">
+                  <p class="card__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
                   </p>
                 </div>
-                <div class="projects-item-text-container">
-                  <h2 class="projects-subtitle">Технокряк</h2>
-                  <p class="projects-text">Веб-сайт</p>
+                <div class="card-thumb">
+                  <h2 class="card-thumb__title">Технокряк</h2>
+                  <p class="card-thumb__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="projects-item">
-              <a class="projects-link link" href="">
-                <div class="projects-thumb">
-                  <img src="./images/projects/project2.jpg" alt="Постер" width="370" height="294" />
-                  <p class="projects-desc">
+            <li class="projects__item">
+              <a class="projects__link link" href="">
+                <div class="card">
+                  <img
+                    class="card__image"
+                    src="./images/projects/project2.jpg"
+                    alt="Постер"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="card__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
                   </p>
                 </div>
-                <div class="projects-item-text-container">
-                  <h2 class="projects-subtitle">
+                <div class="card-thumb">
+                  <h2 class="card-thumb__title">
                     Постер <span lang="en">Orlean vs Golden Star</span>
                   </h2>
-                  <p class="projects-text">Дизайн</p>
+                  <p class="card-thumb__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="projects-item">
-              <a class="projects-link link" href="">
-                <div class="projects-thumb">
+            <li class="projects__item">
+              <a class="projects__link link" href="">
+                <div class="card">
                   <img
+                    class="card__image"
                     src="./images/projects/project3.jpg"
                     alt="Логотип ресторана"
                     width="370"
                     height="294"
                   />
-                  <p class="projects-desc">
+                  <p class="card__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
                   </p>
                 </div>
-                <div class="projects-item-text-container">
-                  <h2 class="projects-subtitle">Ресторан <span lang="en">Seafood</span></h2>
-                  <p class="projects-text">Додаток</p>
+                <div class="card-thumb">
+                  <h2 class="card-thumb__title">Ресторан <span lang="en">Seafood</span></h2>
+                  <p class="card-thumb__text">Додаток</p>
                 </div>
               </a>
             </li>
-            <li class="projects-item">
-              <a class="projects-link link" href="">
-                <div class="projects-thumb">
+            <li class="projects__item">
+              <a class="projects__link link" href="">
+                <div class="card">
                   <img
+                    class="card__image"
                     src="./images/projects/project4.jpg"
                     alt="Навушники"
                     width="370"
                     height="294"
                   />
-                  <p class="projects-desc">
+                  <p class="card__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
                   </p>
                 </div>
-                <div class="projects-item-text-container">
-                  <h2 class="projects-subtitle">Проєкт <span lang="en">Prime</span></h2>
-                  <p class="projects-text">Маркетинг</p>
+                <div class="card-thumb">
+                  <h2 class="card-thumb__title">Проєкт <span lang="en">Prime</span></h2>
+                  <p class="card-thumb__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="projects-item">
-              <a class="projects-link link" href="">
-                <div class="projects-thumb">
+            <li class="projects__item">
+              <a class="projects__link link" href="">
+                <div class="card">
                   <img
+                    class="card__image"
                     src="./images/projects/project5.jpg"
                     alt="Дві коробки"
                     width="370"
                     height="294"
                   />
-                  <p class="projects-desc">
+                  <p class="card__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
                   </p>
                 </div>
-                <div class="projects-item-text-container">
-                  <h2 class="projects-subtitle">Проєкт <span lang="en">Boxes</span></h2>
-                  <p class="projects-text">Додаток</p>
+                <div class="card-thumb">
+                  <h2 class="card-thumb__title">Проєкт <span lang="en">Boxes</span></h2>
+                  <p class="card-thumb__text">Додаток</p>
                 </div>
               </a>
             </li>
-            <li class="projects-item">
-              <a class="projects-link link" href="">
-                <div class="projects-thumb">
+            <li class="projects__item">
+              <a class="projects__link link" href="">
+                <div class="card">
                   <img
+                    class="card__image"
                     src="./images/projects/project6.jpg"
                     alt="Монітор"
                     width="370"
                     height="294"
                   />
-                  <p class="projects-desc">
+                  <p class="card__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
                   </p>
                 </div>
-                <div class="projects-item-text-container">
-                  <h2 class="projects-subtitle" lang="en">Inspiration has no Borders</h2>
-                  <p class="projects-text">Веб-сайт</p>
+                <div class="card-thumb">
+                  <h2 class="card-thumb__title" lang="en">Inspiration has no Borders</h2>
+                  <p class="card-thumb__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="projects-item">
-              <a class="projects-link link" href="">
-                <div class="projects-thumb">
-                  <img src="./images/projects/project7.jpg" alt="Журнал" width="370" height="294" />
-                  <p class="projects-desc">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-                    приватну особу.
-                  </p>
-                </div>
-                <div class="projects-item-text-container">
-                  <h2 class="projects-subtitle">Видання <span lang="en">Limited Edition</span></h2>
-                  <p class="projects-text">Дизайн</p>
-                </div>
-              </a>
-            </li>
-            <li class="projects-item">
-              <a class="projects-link link" href="">
-                <div class="projects-thumb">
+            <li class="projects__item">
+              <a class="projects__link link" href="">
+                <div class="card">
                   <img
+                    class="card__image"
+                    src="./images/projects/project7.jpg"
+                    alt="Журнал"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="card__text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="card-thumb">
+                  <h2 class="card-thumb__title">Видання <span lang="en">Limited Edition</span></h2>
+                  <p class="card-thumb__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a class="projects__link link" href="">
+                <div class="card">
+                  <img
+                    class="card__image"
                     src="./images/projects/project8.jpg"
                     alt="Ярлик с написами"
                     width="370"
                     height="294"
                   />
-                  <p class="projects-desc">
+                  <p class="card__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
                   </p>
                 </div>
-                <div class="projects-item-text-container">
-                  <h2 class="projects-subtitle">Проєкт <span lang="en">LAB</span></h2>
-                  <p class="projects-text">Маркетинг</p>
+                <div class="card-thumb">
+                  <h2 class="card-thumb__title">Проєкт <span lang="en">LAB</span></h2>
+                  <p class="card-thumb__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="projects-item">
-              <a class="projects-link link" href="">
-                <div class="projects-thumb">
+            <li class="projects__item">
+              <a class="projects__link link" href="">
+                <div class="card">
                   <img
+                    class="card__image"
                     src="./images/projects/project9.jpg"
                     alt="Ноутбук"
                     width="370"
                     height="294"
                   />
-                  <p class="projects-desc">
+                  <p class="card__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
                   </p>
                 </div>
-                <div class="projects-item-text-container">
-                  <h2 class="projects-subtitle" lang="en">Growing Business</h2>
-                  <p class="projects-text">Додаток</p>
+                <div class="card-thumb">
+                  <h2 class="card-thumb__title" lang="en">Growing Business</h2>
+                  <p class="card-thumb__text">Додаток</p>
                 </div>
               </a>
             </li>
@@ -281,23 +300,27 @@
       <div class="container footer-container">
         <!-- Адреса та контакти -->
         <div class="footer-address">
-          <a href="./index.html" class="logo link"><span class="accent">Web</span>Studio</a>
-          <address class="address">
+          <a href="./index.html" class="logo link"><span class="logo__accent">Web</span>Studio</a>
+          <address>
             <ul class="address-list list">
-              <li class="address-item">
+              <li class="address-list__item">
                 <a
-                  class="address-link link"
+                  class="address-list__link link"
                   href="https://goo.gl/maps/hUE8pbDkT49WUw5bA"
                   target="_blank"
                   rel="noopener noreferrer"
                   >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
-              <li class="address-item">
-                <a class="mail-link link" href="mailto:info@example.com">info@example.com</a>
+              <li class="address-list__item">
+                <a class="address-list__mail-link link" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
               </li>
-              <li class="address-item">
-                <a class="tel-link link" href="tel:+380991111111">+38 099 111 11 11</a>
+              <li class="address-list__item">
+                <a class="address-list__tel-link link" href="tel:+380991111111"
+                  >+38 099 111 11 11</a
+                >
               </li>
             </ul>
           </address>
