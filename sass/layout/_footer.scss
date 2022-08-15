@@ -48,7 +48,6 @@
     transition: background-color var(--transition-duration) var(--timing-function);
 }
 
-
 /* Розсилка */
 
 .footer-form {
@@ -56,8 +55,7 @@
 }
 
 .mailing-title {
-    font-weight: 700;
-    line-height: 1.14;
+    @include font($fs: 14px, $lh: 16px);
     text-transform: uppercase;
     color: var(--primary-white-color);
 
@@ -75,15 +73,13 @@
     border-radius: 4px;
     background-color: var(--back-color);
 
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
+    @include font(16px, 400, 20px);
     letter-spacing: 0.03em;
     color: var(--primary-white-color);
-}
 
-.mailing-input::placeholder {
-    color: rgba(255, 255, 255, 0.6);
+    &::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
 }
 
 /* Кнопка */

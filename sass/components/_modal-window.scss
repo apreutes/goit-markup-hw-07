@@ -36,9 +36,10 @@
     cursor: pointer;
 
     transition: fill var(--transition-duration) var(--timing-function);
+
+    &:hover,
+    &:focus {
+            fill: var(--accent-color);
+        }
 }
 
-.close-modal:hover,
-.close-modal:focus {
-    fill: var(--accent-color);
-}

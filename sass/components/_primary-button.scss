@@ -8,16 +8,15 @@
     background-color: var(--accent-color);
     border: none;
 
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
+    @include font($lh: 30px);
     letter-spacing: 0.06em;
     cursor: pointer;
 
     transition: background-color var(--transition-duration) var(--timing-function);
+
+    &:hover,
+    &:focus {
+            background-color: #188ce8;
+        }
 }
 
-.primary-button:hover,
-.primary-button:focus {
-    background-color: #188ce8;
-}
