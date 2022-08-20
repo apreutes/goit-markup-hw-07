@@ -732,6 +732,10 @@ h3 {
   color: var(--primary-white-color);
 }
 
+.footer-contacts {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 /* Соцмережі */
 .footer-container {
   display: flex;
